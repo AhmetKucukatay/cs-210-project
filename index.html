@@ -1,0 +1,399 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Twitter Usage and Midterm Exams</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo" style="text-align: center;">
+				<img src="twitter42.png" alt="Your Logo" class="logo-image">
+			</div>
+			<style>
+				.logo-image {
+					width: 87px; /* Adjust size as needed */
+					height: 87px; /* Adjust size as needed */
+					border-radius: 50%; /* Makes the image circular */
+					object-fit: cover; /* Ensures the image covers the area without stretching */
+				}
+			</style>
+			<div class="content">
+				<div class="inner">
+					<h1>X Usage Patterns: A Data-Driven Insight into Midterm Periods</h1>
+
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#motivation">Motivation</a></li>
+					<li><a href="#datasource">Data Source</a></li>
+					<li><a href="#dataanalysis">Analysis </a></li>
+					<li><a href="#findings">Findings</a></li>
+					<li><a href="#futurework">Limitations and Future Work</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<article id="motivation">
+				<h2 class="major">Motivation</h2>
+				<p>
+					Before the YKS exams (university entrance exams in Turkey), my primary social media platform was Instagram. During the YKS period, I consciously ceased using Instagram because I recognized that these hours on instagram were detracting from my study time for this crucial exam. After the exam period, I realized that a life without Instagram gave me more quality time to spend with my family and people that I care and presented more chance to self-improvement. A life without social media was working perfectly for me until a friend of mine introduced me to X. Over the past 3 years, I've noticed a steadily increasing engagement with X. As a result, during all midterm and final periods, I always contemplated "Should I delete the X like I did to Instagram?" but I never deleted X, so the ultimate question emerges, "Am I addicted to X?"
+				</p>
+				<p>
+					My main motivation for this project was to analyze my X usage patterns, especially in light of the current times of intense academic periods, to address my growing concern regarding a potential and dangerous addiction. The reason I conduct this analysis is not only to quantify my X usage but also to gain insights into the role of X in my personal and academic life. It is an exploration into the fine line which separates real-life responsibilities and digital engagement with the goal of forming healthier social media habits that can support my academic goals and personal well-being.
+				</p>
+			</article>
+
+			<!-- datasource -->
+			<article id="datasource">
+				<h2 class="major">Data Source</h2>
+				<p>
+					The data for this project was carefully collected from the 'Digital Health and Parental Controls' section within the settings of my smartphone in order to track my daily X usage. This feature
+					provided a comprehensive log of all application usage from which I extracted only the data related to my daily X usage. The fact that my usage of X is exclusively through my smartphone, eliminates
+					the potential for any lost time that could arise from using other devices like computer or tablet. So we can conclude that this data collection method ensures a high level of precision and specificity
+					because of the fact that it accounts for my interactions with X solely through mobile devices.
+				</p>
+			</article>
+
+			<!-- Data Analysis -->
+			<article id="dataanalysis">
+				<h2 class="major">Analysis of the data</h2>
+				<p>
+					As I already mentioned in the introduction part, my primary motivation for this project was to investigate the relationship between my daily usage of X and midterm periods. To formulate my hypothesis,
+					I begin by comparing the average amount of time I spent on X during midterm and non-midterm periods to understand my basic patterns of X usage. As illustrated in the graph below, there is a clear change
+					in usage between the two periods. As a result of this observation, I hypothesize that there is a significant decrease in my daily usage of X during midterm periods compared to non-midterm periods. The reason can
+					be an increased academic workload or a decrease in leisure time.
+				</p>
+				<div class="iframe-container">
+					<iframe src="twitter_usage_comparison1.html" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<p>
+					After establishing my hypothesis, I tried to validate it with empirical evidence. Firstly, I prepared, cleaned, and organized my data to ensure accurate and meaningful analysis. I started by categorizing each day as either a 'midterm' or 'non-midterm' period based on my midterms. I had midterms on December 17, 21, 23, and 30. Therefore, I selected the midterm periods as 2 days before the first midterm, 3 days before last midterm (the reason why I select 3 days before last midterm will be explained in coming paragraphs) and one day before the second and third midterms, along with the midterm dates themselves. The reason why I select only one day before the second and third midterms is because they are close to each other. This classification was vital since it formed the basis of my comparative analysis.
+				</p>
+				<p>
+					To validate my hypothesis, I first established a null hypothesis stating, "There is no significant difference in my daily usage of X between midterm and non-midterm periods."  This statement was key to interpreting the results of the T-test, the Exploratory Data Analysis (EDA) technique selected for this project. I chose this EDA test because it is a useful test for discerning whether the differences observed in sample means are due to random chance or a true underlying effect. As a result of this test, I expect to see two critical values that are crucial for my hypothesis: the T-statistic and the p-value. The T-statistic provides the degree of the difference between the two groups in terms of standard deviations, and the p-value quantifies the likelihood that the observed differences could have occurred under the null hypothesis. A low p-value (generally below the threshold of 0.05) suggests that the differences are statistically significant and unlikely to have occurred by random chance, and we can reject the null hypothesis.
+				</p>
+				<p> The first graph already suggests that there is a decrease in the usage of X during the midterm periods. The subsequent interactive graph, displayed below, offers a more detailed examination of my X usage on a daily basis. This interactive visual provides more nuanced patterns, like an observed outlier on November 29. On this day, there is a notable spike in X usage. This deviation can be explained by the fact that on November 27 and 28, I had completed most of my midterm preparations because I had works outside the campus on November 29, and the evening was significant because Galatasaray was playing Manchester United in the Champions League (that is why I also included November 27 as my midterm period). As a result, I had more time to spend on X and therefore, an outlier emerged.</p>
+				<div class="iframe-container">
+					<!-- Second image after the T-test explanation -->
+					<iframe src="twitter_usage_midterms1.html" frameborder="0" allowfullscreen></iframe>
+				</div> <!-- Closing div tag for the second iframe container -->
+				<p>As the 29 November suggests, my daily X usage does not solely depend on whether that day is midterm period or not; but it depends on various different factors. Therefore, to get more nuanced information regarding the factors that contribute to my daily X usage, I turned to machine learning, specifically the Random Forest Regressor model. Despite my relatively small dataset, this model is suitable for uncovering complex patterns with its ability to model nonlinear relationships between features and X usage. It aggregates multiple decision trees to improve prediction robustness and accuracy, which is very crucial for my project.</p>
+				<p>For the ML model, I selected  'DayOfWeek', 'Month', and 'IsMidterm' as my independent variables -features-  and 'Total Daily Usage (minutes)' as my dependent variable, and prepared and organized my data accordingly. Before applying the ML model, I divided my dataset into training and test sets. I used 80% of the data for training and 20% for testing to ensure that the model has enough data to learn from while also having a separate dataset to validate its predictive power. After preparing the data, I choose the best parameters for the number of trees in the forest ('n_estimators') and the maximum depth of the trees ('max_depth') to avoid overfitting or underfitting. For this work, I used a systematic method called GridSearchCV that iterates over several multiple combinations of parameter values to find the most effective settings. Using cross-validation, this approach evaluates each combination to guarantee the model is not just performing well on one specific subset of the data. After the hyperparameter tuning, the identified parameters were used to train the optimized Random Forest model. After the training, I calculated the effectiveness of this learning process using the Root Mean Squared Error (RMSE). The RMSE is an essential tool as it quantifies the model's prediction errors, with a lower value indicating higher accuracy.</p>
+				<p>In addition, I examined the feature importance derived from the Random Forest model. This examination showed how each independent variable influenced the predictions of my daily X usage. It provided a deeper understanding of the factors impacting my social media behavior.</p>
+			</article>
+
+			<style>
+				.iframe-container {
+					position: relative;
+					width: 100%; /* Responsive width */
+					padding-bottom: 56.25%; /* Adjust the aspect ratio of the iframe */
+					height: 0; /* Initial height */
+					overflow: hidden; /* Hide any content that overflows the container */
+				}
+
+					.iframe-container iframe {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%; /* Use full width */
+						height: 100%; /* Use full height */
+					}
+			</style>
+
+
+			<!-- findings -->
+			<article id="findings">
+				<h2 class="major">Findings</h2>
+				<p>As a result of T-test, I found the T-statistic value as -2.89 and the p-value as 0.0058. Firstly, T-statistic value indicates a considerable decrease, because of the negative value, in my daily X usage during the midterm periods. More convincingly, my p-value, which equals to 0.0058, strongly implies that this difference is not the product of random change because of the fact that it is well below the conventional threshold of 0.05. Therefore, we can confidently reject our null hypothesis. Together, these findings provide robust statistical evidence for my hypothesis, which is "there is a significant decrease in my daily usage of X during midterm periods compared to non-midterm periods."</p>
+				<p>The results of the Random Forest model were enlightening. The model's Root Mean Squared Error (RMSE), which eqauls to 32.47, shows a reasonable level of prediction accuracy when we consider the complexity of human behavior and social media usage patterns. The second and more important, in the case of my project, result of this model is the feature importance results. As you can see below, this result showed that DayOfWeek' accounted for approximately 51.1% of the model's predictive power, followed by 'Month' at 37.9%, and 'IsMidterm' at 11%. These findings suggest that even though my midterm periods have a considerable impact on my X usage, there are several other factors that affect my X usage. </p>
+				<img src="feature_importance_chart.png" alt="Feature Importance Chart" style="width: 100%; max-width: 600px; height: auto;">
+				<p>To conclude, these findings from both the T-test and Random Forest model, has not only provided quantitative insights into my social media habits but also qualitatively shifted my perspective. My main motivation for this project was to analyze and take an action whether should I delete the X for a better academic career and more quality time. Despite the fact that I have no definitive evidence that whether my X usage directly diminished my life quality, I can conclude that I can adjust my X usage during exam periods and I do not have to delete my X application. </p>
+			</article>
+
+			<!-- Limitations and future WOrks -->
+			<article id="futurework">
+				<h2 class="major">Limitations and Future Work</h2>
+				<p>
+					While the insights gained from this project are valuable, we should also consider the limitations it possesses. Firstly, since this is the project of one semester class, the collection of data was confined to one exam period which leads to a relatively small dataset. Another limitation that needs to be considered is that I formulated the hypothesis and organized the steps of the project during the midterm period as a result of my thoughts and concerns about whether my usage of X was excessive during midterms in the midterm period. This might bring bias into the study because my focus and usage patterns during this specific period may not be representative of my typical social media habits. The last limitation that should be taken into account is the study for midterms is not always linear and has the same patterns, like in the case of last midterm, in which some factors changed my midterm preparation pattern. For a comprehensive grasp of the study's breadth and the interpretation of its findings, it is imperative to acknowledge these limitations.
+				</p>
+				<p>For the future, I will have plenty more exams week which will allow me to test my hypothesis with more data for more precise and enlightening results. Accordingly with results of my Machine Learning model, I am inspired to undertake various projects, which considers different variables that can effect my X usage, to gain deeper insights into my X usage. The most intriguing of these projects could potentially expand my study from a single user to encompass a broader and more representative data set.  </p>
+			</article>
+					<!-- Elements -->
+					<article id="elements">
+						<h2 class="major">Elements</h2>
+
+						<section>
+							<h3 class="major">Text</h3>
+							<p>
+								This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+								This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+								This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.
+							</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h4>Blockquote</h4>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h4>Preformatted</h4>
+							<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
+
+						<section>
+							<h3 class="major">Lists</h3>
+
+							<h4>Unordered</h4>
+							<ul>
+								<li>Dolor pulvinar etiam.</li>
+								<li>Sagittis adipiscing.</li>
+								<li>Felis enim feugiat.</li>
+							</ul>
+
+							<h4>Alternate</h4>
+							<ul class="alt">
+								<li>Dolor pulvinar etiam.</li>
+								<li>Sagittis adipiscing.</li>
+								<li>Felis enim feugiat.</li>
+							</ul>
+
+							<h4>Ordered</h4>
+							<ol>
+								<li>Dolor pulvinar etiam.</li>
+								<li>Etiam vel felis viverra.</li>
+								<li>Felis enim feugiat.</li>
+								<li>Dolor pulvinar etiam.</li>
+								<li>Etiam vel felis lorem.</li>
+								<li>Felis enim et feugiat.</li>
+							</ol>
+							<h4>Icons</h4>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							</ul>
+
+							<h4>Actions</h4>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions stacked">
+								<li><a href="#" class="button primary">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+						</section>
+
+						<section>
+							<h3 class="major">Table</h3>
+							<h4>Default</h4>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<h4>Alternate</h4>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+
+						<section>
+							<h3 class="major">Buttons</h3>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Primary</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button primary disabled">Disabled</span></li>
+								<li><span class="button disabled">Disabled</span></li>
+							</ul>
+						</section>
+
+						<section>
+							<h3 class="major">Form</h3>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="demo-name">Name</label>
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+									</div>
+									<div class="field half">
+										<label for="demo-email">Email</label>
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+									</div>
+									<div class="field">
+										<label for="demo-category">Category</label>
+										<select name="demo-category" id="demo-category">
+											<option value="">-</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+									<div class="field half">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low</label>
+									</div>
+									<div class="field half">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High</label>
+									</div>
+									<div class="field half">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy</label>
+									</div>
+									<div class="field half">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">Not a robot</label>
+									</div>
+									<div class="field">
+										<label for="demo-message">Message</label>
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Reset" /></li>
+								</ul>
+							</form>
+						</section>
+
+					</article>
+
+</div>
+
+	
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
